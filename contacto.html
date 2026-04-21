@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Tu Nombre</title>
+  <style>
+    body {
+      background-color: #c8e6a0;
+      color: #2d1b00;
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #4a7c2f;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f0c8;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #f5d03a;
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #5d9e3f;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 5px solid #2e5a1b;
+    }
+
+    header h1 {
+      font-size: 48px;
+      color: #f5f0c8;
+      margin: 0 0 10px 0;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #d7efc5;
+      margin: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: #eef8e6;
+      border: 2px solid #4a7c2f;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      color: #2e5a1b;
+      font-size: 28px;
+      margin-top: 0;
+      border-bottom: 2px solid #5d9e3f;
+      padding-bottom: 8px;
+    }
+
+    section p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    /* Formulario */
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: #2e5a1b;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      font-family: Georgia, serif;
+      font-size: 15px;
+      border: 2px solid #4a7c2f;
+      background-color: #f5f5f0;
+      color: #2d1b00;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #2e5a1b;
+      background-color: #ffffff;
+    }
+
+    textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      display: inline-block;
+      background-color: #5d9e3f;
+      color: #f5f0c8;
+      border: 2px solid #2e5a1b;
+      padding: 10px 25px;
+      font-family: Georgia, serif;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2e5a1b;
+    }
+
+    /* Tabla de enlaces de contacto */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    table th {
+      background-color: #4a7c2f;
+      color: #f5f0c8;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table td {
+      padding: 10px;
+      border-bottom: 1px solid #a3c97e;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #d7efc5;
+    }
+
+    table a {
+      color: #2e5a1b;
+    }
+
+    footer {
+      background-color: #2e5a1b;
+      color: #d7efc5;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #a3c97e;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="portfolio.html">Portafolio</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <header>
+    <h1>Contacto</h1>
+    <p>¿Tienes un proyecto en mente? Escríbeme</p>
+  </header>
+
+  <main>
+
+    <!-- Información de contacto -->
+    <section>
+      <h2>Mis Datos</h2>
+      <p>Puedes contactarme a través del formulario o directamente por cualquiera de estos medios:</p>
+      <table>
+        <tr>
+          <th>Medio</th>
+          <th>Enlace / Dirección</th>
+        </tr>
+        <tr>
+          <td>Correo electrónico</td>
+          <td><a href="mailto:emilianomeunier22@gmail.com">emilianomeunier22@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td>GitHub</td>
+          <td><a href="https://github.com/StampedHalo2" target="_blank">github.com/StampedHalo2</a></td>
+        </tr>
+        <tr>
+          <td>Instagram</td>
+          <td><a href="https://instagram.com/emilianomeunier_" target="_blank">@emilianomeunier_</a></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section>
+      <h2>Envíame un Mensaje</h2>
+      <p>Rellena el formulario y te responderé</p>
+      <form action="https://formspree.io/f/xqewyazw" method="POST">
+
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+
+        <label for="asunto">Asunto *</label>
+        <select id="asunto" name="asunto" required>
+          <option value="" disabled selected>-- Elige un asunto --</option>
+          <option value="colaboracion">Colaboración o proyecto</option>
+          <option value="freelance">Encargo freelance</option>
+          <option value="practicas">Prácticas o empleo</option>
+          <option value="feedback">Comentario sobre mi trabajo</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto, plazos, presupuesto..." required></textarea>
+
+        <input type="submit" value="Enviar mensaje" />
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Emiliano Meunier Soberanis &mdash; Hecho con HTML y CSS</p>
+    <p>
+      <a href="index.html">Inicio</a> |
+      <a href="portfolio.html">Portafolio</a> |
+      <a href="contacto.html">Contacto</a>
+    </p>
+  </footer>
+
+</body>
+</html>
